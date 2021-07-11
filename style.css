@@ -1,4 +1,158 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* fonts link  */
+/* common styles or utitlites */
+
+body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f1ff;
+}
+/* navigation start */
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #562EFF;
+    margin-bottom: 31px;
+}
+    nav{
+        display: flex;
+        align-items: center;
+        width: 69%;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+    nav .logo-container{
+        display: flex;
+        align-items: center;
+    }
+    nav .logo-container .logo{
+        width: 40.42px;
+        height: 51px;
+        margin-right: 15.58px;
+    }
+    nav .logo-container h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu li{
+        list-style: none;
+        margin-right: 36px;
+    }
+    .menu li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400px;
+        text-transform: capitalize;
+    }
+    .menu li:last-child{
+        margin-right: 0px;
+    }
+/* navigation end  */
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #fff;
+    width: 870px;
+    padding: 30px;
+    margin-top: 5px;
+}
+hr{
+    margin-top: 29px;
+    border: 1px solid #D1D1D1;
+}
+/* top players style  */
+.section-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.players .player {
+    display: flex;
+    align-items: center;
+}
+
+.players .player img {
+    width: 56px;
+    height: 56px;
+}
+.players .player .player-name{
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* top blog */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blogs .blog{
+    display: flex;
+}
+.blogs .blog img{
+    width: 177px;
+    height: 117px;
+}
+.blogs .blog .blog-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+    font-weight: 500;
+}
+/* footer  */
+.courses{
+    display: flex;
+    justify-content: center;
+    
+}
+.course{
+    width: 252.42px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 13px 17.42px;
+    margin-right:23px;
+}
+.course h3{
+    margin-bottom: 0;
+}
+.course a{
+    font-size: 14px;
+    text-decoration: none;
+    color:#ED6B4F ;
+    font-weight: 400;
+}
+.course-container{
+    display: flex;
+    justify-content: space-between;
+}
+.course img{
+    width: 100%;
 }
