@@ -33,9 +33,9 @@
     <main>
         <!-- top -->
         <section class="container">
-            <div class="top-players">
-                <h2 class="section-title">Top Players</h2>
-                <div class="players">
+            <div id="player-section" class="top-players">
+                <h2 id="top-players" class="section-title">Top Players</h2>
+                <div id="players" class="players">
                     <!-- .player*6>img[src="images/players-$.png"]+h3[top player-$] -->
                     <div class="player">
                         <img src="images/players/player-1.png" alt="">
@@ -65,7 +65,7 @@
             </div>
             <hr>
             <div class="top-blog">
-                <h2 class="section-title">Top Blog</h2>
+                <h2 id="top-blogs" class="section-title">Top Blog</h2>
                 <div class="blogs">
                     <article class="blog">
                       <div class="thumbnail">
@@ -182,7 +182,25 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <ul id="menu">
+                    <li>list-1</li>
+                    <li>list-2</li>
+                    <li>list-3</li>
+                    <li>list-4</li>
+                </ul>
+                <button id="add">add list</button>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <input id="input-field" type="text" value="0">
+                <button id="increase">increase me</button>
+            </div>
+        </section>
     </main>
     <!-- main section end -->
+    <script src="script.js"></script>
 </body>
 </html>
